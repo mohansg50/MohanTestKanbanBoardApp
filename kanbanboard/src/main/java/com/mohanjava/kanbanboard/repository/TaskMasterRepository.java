@@ -9,15 +9,6 @@ import com.mohanjava.kanbanboard.model.TaskMaster;
 
 public interface TaskMasterRepository extends JpaRepository<TaskMaster, Integer> {
 
-//	int create(TaskMaster taskMaster);
-//
-//	boolean update(TaskMaster taskMaster);
-//
-//	TaskMaster findByID(int id);
-//
-//	List<TaskMaster> findAll();
-
-	
 	@Query("SELECT tm FROM TaskMaster tm WHERE tm.recordStatus = 'Active'")
     public List<TaskMaster> findAllActiveTasks();
 	
