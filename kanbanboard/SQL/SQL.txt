@@ -1,0 +1,7 @@
+CREATE TABLE `task_master` (
+  `task_master_id` int NOT NULL AUTO_INCREMENT,
+  `task_name` varchar(200) NOT NULL,
+  `task_category` varchar(45) NOT NULL,
+  `record_status` varchar(45) NOT NULL DEFAULT 'Active',
+  PRIMARY KEY (`task_master_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
